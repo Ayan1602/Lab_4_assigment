@@ -1,12 +1,12 @@
 class Match:
-    def _init_(self, location, team1, team2, timing):
+    def __init__(self, location, team1, team2, timing):
         self.location = location
         self.team1 = team1
         self.team2 = team2
         self.timing = timing
 
 class FlightTable:
-    def _init_(self):
+    def __init__(self):
         self.matches = []
 
     def add_match(self, match):
@@ -71,5 +71,5 @@ def main():
         else:
             print("Invalid choice. Please select a valid option.")
 
-if _name_ == "_main_":
+if __name__ == "__main__":
     main()
